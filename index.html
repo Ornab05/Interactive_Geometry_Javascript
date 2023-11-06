@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment!!!!</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/thumbnails/003/377/380/small/line-icon-for-web-develop-vector.jpg">
+</head>
+<body>
+
+    <header>
+     <div class="m-10 bg-cyan-100 p-2 rounded-xl border shadow-lg" style="display: flex; justify-content:space-between;">
+        <div>
+             <h1 class="text-3xl font-semibold">Interactive</h1>
+             <h2 class="text-zinc-500 text-lg font-semibold">Geometry Genius</h2>
+        </div>
+        <div>
+          <a href="blog.html" target="_blank"><button class="hover:bg-orange-200 text-xl bg-orange-500 m-5 rounded h-8 w-20">Blog</button></a>
+        </div>
+     </div>
+
+    </header>
+
+    <!-- the body section -->
+
+    <main>
+
+     <div class="grid grid-cols-4 gap-5 m-3">
+        <!-- 1 -->
+
+        <div id="triangle-body" class="border border-current p-4 ">
+            <img class="w-3/4 mx-auto" src="images/triangle.png" alt="">
+            <br>
+            <h1 id="triangle" class="text-2xl font-semibold text-center">Triangle</h1>
+            <br>
+            <h2 class="text-center">Area (A) =
+                0.5     b
+                h</h2>
+             <br>
+            <center><input id="input-tri-1" class="w-12 bg-slate-300 rounded " type="text"> cm <input id="input-tri-2" class="w-12 bg-slate-300 rounded " type="text"> cm</center>
+            <br> 
+            <center><button id="btn-calculate-tri" class="hover:bg-red-600 text-xl bg-cyan-400 font-semibold h-8 w-1/2 rounded ">Calculate</button></center>
+        </div>
+
+        <!-- 2 -->
+
+        <div id="rectangle-body" class="border border-current p-4">
+            <img class="w-3/4 mx-auto"  src="images/rectangle.png" alt="">
+            <br>
+            <h1 id="Rectangle" class="text-2xl font-semibold text-center">Rectangle</h1>
+            <br>
+            <h2 class="text-center">Area (A) = w       I</h2>
+             <br>
+            <center><input id="input-rec-1" class="w-12 bg-slate-300 rounded " type="text"> cm <input id="input-rec-2" class="w-12 bg-slate-300 rounded " type="text"> cm</center>
+            <br> <br>
+            <center><button id="btn-calculate-rec" class=" hover:bg-red-600 text-xl bg-cyan-400 font-semibold h-8 w-1/2 rounded ">Calculate</button></center>
+        </div>
+
+        <!-- 3 -->
+
+        <div id="para-body" class="border border-current p-4">
+            <img class="w-3/4 mx-auto"  src="images/parallelogram.png" alt="">
+            <br>
+            <h1 id="parallelogram" class="text-2xl font-semibold text-center">parallelogram</h1>
+            <br>
+            <h2 class="text-center">Area (A) = b       h</h2>
+             <br>
+            <center><input id="input-par-1" class="w-12 bg-slate-300 rounded " type="text"> cm <input id="input-par-2" class="w-12 bg-slate-300 rounded " type="text"> cm</center>
+            <br> <br>
+            <center><button id="btn-calculate-par" class="hover:bg-red-600 text-xl bg-cyan-400 font-semibold h-8 w-1/2 rounded ">Calculate</button></center>
+        </div>
+
+        <!-- 4 -->
+
+        <div id="text-adding-div" class="border border-current p-4">
+            
+            <h1 class="text-xl font-semibold text-center"> <u>Area Calculation</u> </h1>
+            <h2></h2>
+        </div>
+
+        <!-- 5 -->
+
+        <div id="rhombus-body" class="border border-current p-4">
+            <img class="w-3/4 mx-auto"  src="images/rhombus.png" alt="">
+            <br>
+            <h1 id="Rhombus" class="text-2xl font-semibold text-center">Rhombus</h1>
+            <br>
+            <h2 class="text-center">Area (A) = 0.5 * d1 *d2</h2>
+             <br>
+            <center><input id="input-rho-1" class="w-12 bg-slate-300 rounded " type="text"> cm <input id="input-rho-2" class="w-12 bg-slate-300 rounded " type="text"> cm</center>
+            <br> 
+            <center><button id="btn-calculate-rho" class="hover:bg-red-600 text-xl bg-cyan-400 font-semibold h-8 w-1/2 rounded ">Calculate</button></center>
+        </div>
+
+        <!-- 6 -->
+
+        <div id="penta-body" class="border border-current p-4">
+            <img class="w-1/2 mx-auto"  src="images/pentagon.png" alt="">
+            <br>
+            <h1 id="Pentagon" class="text-2xl font-semibold text-center">Pentagon</h1>
+            <br>
+            <h2 class="text-center">Area (A) = 0.5 * p *b
+                h</h2>
+             <br> 
+            <center><input id="input-pen-1" class="w-12 bg-slate-300 rounded " type="text"> cm <input id="input-pen-2" class="w-12 bg-slate-300 rounded " type="text"> cm</center>
+            <br> <br>
+            <center><button id="btn-calculate-pen" class="hover:bg-red-600 text-xl bg-cyan-400 font-semibold h-8 w-1/2 rounded ">Calculate</button></center>
+        </div>
+
+        <!-- 7 -->
+
+        <div id="ell-body" class="border border-current p-4">
+            <img class="w-3/4 mx-auto"  src="images/ellipse.png" alt="">
+            <br>
+            <h1 id="Ellipse" class="text-2xl font-semibold text-center">Ellipse</h1>
+            <br>
+            <h2 class="text-center">Area (A) = pie ab</h2>
+             <br>
+            <center><input id="input-ell-1" class=" w-12 bg-slate-300 rounded " type="text"> cm <input id="input-ell-2" class="w-12 bg-slate-300 rounded " type="text"> cm</center>
+            <br> <br>
+            <center><button id="btn-calculate-ell" class=" hover:bg-red-600 text-xl bg-cyan-400 font-semibold h-8 w-1/2 rounded ">Calculate</button></center>
+        </div>
+     </div>
+
+
+    </main>
+
+    <footer>
+
+        <script src="js/main.js"></script>
+
+    </footer>
+    
+</body>
+</html>
